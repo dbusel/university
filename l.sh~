@@ -1,0 +1,1 @@
+wget -O ~/index.html "http://www.tut.by" grep '<span class="w-weather_temt">' index.html | sed 's/<\/\?[^>]\+>//g' | sed 's/&deg;//g' | sed 's/\t//g'
