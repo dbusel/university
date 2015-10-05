@@ -8,5 +8,5 @@ process:
 	gcc client.c -o client.o
 	gcc server.c -DPROCESS -o server.o -lpthread
 clean:
-	rm -f *.o
-	rm -f output.txt
+	rm -rf *.o
+	rm output.txt
